@@ -1,0 +1,467 @@
+{
+  "experiences": [
+    {
+      "companyName": "Microsoft",
+      "jobTitle": "Software Development Engineer",
+      "salary": 2400000,
+      "yearOfJoining": 2023,
+      "description": "Microsoft's interview process was comprehensive and focused on problem-solving abilities. The interviewers were professional and created a comfortable environment. The process tested both technical skills and cultural fit. The company has a great work culture and provides excellent opportunities for growth. The team is collaborative and supportive, with a strong emphasis on innovation and continuous learning. The benefits package is competitive, and there are numerous opportunities for career advancement. The work-life balance is good, and the company provides excellent resources for professional development.",
+      "technicalQuestions": [
+        "Implement a LRU Cache from scratch",
+        "Design a distributed system for a chat application",
+        "Explain the difference between process and thread",
+        "Write an algorithm to find the longest palindromic substring",
+        "How would you design Twitter's backend?"
+      ],
+      "nonTechnicalQuestions": [
+        "Describe a challenging project you worked on",
+        "How do you handle conflicts in a team?",
+        "What's your approach to learning new technologies?",
+        "Tell me about a time you failed and what you learned",
+        "How do you prioritize tasks when everything is urgent?"
+      ],
+      "rounds": [
+        {
+          "roundNumber": 1,
+          "description": "Online Assessment",
+          "keyPoints": [
+            "Two coding problems",
+            "Time limit: 90 minutes",
+            "Focus on data structures and algorithms"
+          ]
+        },
+        {
+          "roundNumber": 2,
+          "description": "Technical Interview 1",
+          "keyPoints": [
+            "System design discussion",
+            "Code optimization problems",
+            "Discussion about previous projects"
+          ]
+        },
+        {
+          "roundNumber": 3,
+          "description": "Technical Interview 2",
+          "keyPoints": [
+            "Deep dive into data structures",
+            "Problem-solving scenarios",
+            "Architecture discussion"
+          ]
+        },
+        {
+          "roundNumber": 4,
+          "description": "HR Round",
+          "keyPoints": [
+            "Behavioral questions",
+            "Salary discussion",
+            "Company policies overview"
+          ]
+        }
+      ]
+    },
+    {
+      "companyName": "Google",
+      "jobTitle": "Software Engineer",
+      "salary": 2800000,
+      "yearOfJoining": 2023,
+      "description": "Google's interview process was highly structured and challenging. The focus was on algorithmic problem-solving and system design. The company values innovation and creative thinking. The work environment is dynamic and encourages out-of-the-box solutions. There's a strong emphasis on code quality and testing. The team culture promotes collaboration and knowledge sharing. The projects are cutting-edge and impactful. The company provides excellent learning resources and mentorship opportunities. The benefits are comprehensive, and there's a strong focus on employee well-being.",
+      "technicalQuestions": [
+        "Design Google Drive's architecture",
+        "Implement a concurrent hash map",
+        "Explain how would you scale a web application",
+        "Write an efficient algorithm for string matching",
+        "How would you handle race conditions in a distributed system?"
+      ],
+      "nonTechnicalQuestions": [
+        "Tell me about a time you showed leadership",
+        "How do you stay updated with technology trends?",
+        "Describe a situation where you had to make a difficult decision",
+        "How do you handle feedback?",
+        "What's your biggest professional achievement?"
+      ],
+      "rounds": [
+        {
+          "roundNumber": 1,
+          "description": "Phone Screen",
+          "keyPoints": [
+            "Basic coding problems",
+            "Technical background discussion",
+            "Project experience"
+          ]
+        },
+        {
+          "roundNumber": 2,
+          "description": "Virtual Onsite - Coding",
+          "keyPoints": [
+            "Data structures and algorithms",
+            "Time complexity analysis",
+            "Code optimization"
+          ]
+        },
+        {
+          "roundNumber": 3,
+          "description": "Virtual Onsite - System Design",
+          "keyPoints": [
+            "Scalability discussion",
+            "Architecture design",
+            "Trade-off analysis"
+          ]
+        },
+        {
+          "roundNumber": 4,
+          "description": "Leadership",
+          "keyPoints": [
+            "Behavioral assessment",
+            "Team collaboration scenarios",
+            "Problem-solving approach"
+          ]
+        },
+        {
+          "roundNumber": 5,
+          "description": "Hiring Committee Review",
+          "keyPoints": [
+            "Overall evaluation",
+            "Team matching",
+            "Offer discussion"
+          ]
+        }
+      ]
+    },
+    {
+      "companyName": "JPMorgan Chase",
+      "jobTitle": "Technology Analyst",
+      "salary": 1800000,
+      "yearOfJoining": 2023,
+      "description": "JPMC's interview process focused on both technical skills and financial domain knowledge. The company offers excellent exposure to financial technology. The work involves building robust and secure systems for banking operations. There's a strong emphasis on regulatory compliance and security. The training program is comprehensive and helps in understanding the financial domain. The team structure is well-organized with clear career progression paths. The company provides good opportunities for cross-functional learning. The work culture promotes innovation while maintaining stability.",
+      "technicalQuestions": [
+        "Explain ACID properties in database transactions",
+        "How would you secure a REST API?",
+        "Implement a thread-safe singleton pattern",
+        "Design a high-frequency trading system",
+        "Explain the CAP theorem"
+      ],
+      "nonTechnicalQuestions": [
+        "Why are you interested in financial technology?",
+        "How do you ensure accuracy in your work?",
+        "Describe a time you worked under pressure",
+        "How do you handle multiple deadlines?",
+        "What interests you about JPMC?"
+      ],
+      "rounds": [
+        {
+          "roundNumber": 1,
+          "description": "Online Assessment",
+          "keyPoints": [
+            "Coding test",
+            "Aptitude assessment",
+            "Technical MCQs"
+          ]
+        },
+        {
+          "roundNumber": 2,
+          "description": "Technical Round",
+          "keyPoints": [
+            "Programming concepts",
+            "Database design",
+            "System architecture"
+          ]
+        },
+        {
+          "roundNumber": 3,
+          "description": "Domain Round",
+          "keyPoints": [
+            "Financial knowledge",
+            "Banking processes",
+            "Security protocols"
+          ]
+        },
+        {
+          "roundNumber": 4,
+          "description": "HR Round",
+          "keyPoints": [
+            "Cultural fit assessment",
+            "Compensation discussion",
+            "Role expectations"
+          ]
+        }
+      ]
+    },
+    {
+      "companyName": "Oracle",
+      "jobTitle": "Applications Developer",
+      "salary": 2000000,
+      "yearOfJoining": 2023,
+      "description": "Oracle's interview process was thorough and focused on database knowledge and application development skills. The company provides excellent opportunities to work with enterprise-level applications. The work environment is professional and structured. There's a strong emphasis on database technologies and cloud computing. The team is experienced and supportive. The projects involve working with cutting-edge cloud technologies. The company offers good benefits and work-life balance. Training opportunities are abundant for professional growth.",
+      "technicalQuestions": [
+        "Explain database normalization forms",
+        "How would you optimize a slow SQL query?",
+        "Implement a connection pool",
+        "Describe the differences between REST and GraphQL",
+        "How would you handle database deadlocks?"
+      ],
+      "nonTechnicalQuestions": [
+        "Why Oracle over other tech companies?",
+        "How do you approach learning new technologies?",
+        "Describe a challenging bug you fixed",
+        "How do you handle tight deadlines?",
+        "What's your experience with Agile methodologies?"
+      ],
+      "rounds": [
+        {
+          "roundNumber": 1,
+          "description": "Technical Screening",
+          "keyPoints": [
+            "SQL queries",
+            "Basic programming concepts",
+            "Database design principles"
+          ]
+        },
+        {
+          "roundNumber": 2,
+          "description": "Core Technical",
+          "keyPoints": [
+            "Advanced SQL",
+            "System design",
+            "Performance optimization"
+          ]
+        },
+        {
+          "roundNumber": 3,
+          "description": "Team Fit",
+          "keyPoints": [
+            "Technical discussion",
+            "Team collaboration",
+            "Problem-solving approach"
+          ]
+        },
+        {
+          "roundNumber": 4,
+          "description": "Managerial Round",
+          "keyPoints": [
+            "Project discussion",
+            "Role expectations",
+            "Career goals"
+          ]
+        }
+      ]
+    },
+    {
+      "companyName": "S&P Global",
+      "jobTitle": "Software Engineer",
+      "salary": 1900000,
+      "yearOfJoining": 2023,
+      "description": "S&P Global's interview process was well-structured and focused on both technical skills and financial domain knowledge. The company offers great exposure to financial markets and data analytics. The work environment is professional with a good mix of finance and technology. There's emphasis on data processing and analysis. The team is knowledgeable and helpful. Projects involve working with large-scale financial data. The company provides excellent learning opportunities in fintech. Work-life balance is good with flexible hours.",
+      "technicalQuestions": [
+        "Design a system for real-time stock data processing",
+        "Implement a rate limiter",
+        "Explain microservices architecture",
+        "How would you handle large-scale data processing?",
+        "Describe your experience with cloud services"
+      ],
+      "nonTechnicalQuestions": [
+        "What interests you about financial markets?",
+        "How do you handle ambiguous requirements?",
+        "Describe a project you're proud of",
+        "How do you stay organized?",
+        "What's your approach to mentoring others?"
+      ],
+      "rounds": [
+        {
+          "roundNumber": 1,
+          "description": "Online Assessment",
+          "keyPoints": [
+            "Coding problems",
+            "Analytical thinking",
+            "Technical aptitude"
+          ]
+        },
+        {
+          "roundNumber": 2,
+          "description": "Technical Discussion",
+          "keyPoints": [
+            "System design",
+            "Data structures",
+            "Problem-solving"
+          ]
+        },
+        {
+          "roundNumber": 3,
+          "description": "Domain Knowledge",
+          "keyPoints": [
+            "Financial concepts",
+            "Market knowledge",
+            "Technical implementation"
+          ]
+        },
+        {
+          "roundNumber": 4,
+          "description": "Final Round",
+          "keyPoints": [
+            "Team fit",
+            "Cultural alignment",
+            "Role discussion"
+          ]
+        }
+      ]
+    },
+    {
+      "companyName": "Cognizant",
+      "jobTitle": "Programmer Analyst",
+      "salary": 1600000,
+      "yearOfJoining": 2023,
+      "description": "Cognizant's interview process was comprehensive and focused on problem-solving abilities. The company provides good opportunities for freshers to learn and grow. The work culture is supportive with emphasis on learning. Training programs are extensive and well-structured. The team environment is collaborative and helpful. Projects span across various domains and technologies. The company offers good career growth opportunities. Work involves both development and maintenance projects.",
+      "technicalQuestions": [
+        "Explain OOPS concepts with examples",
+        "What are design patterns?",
+        "Describe MVC architecture",
+        "How do you handle exceptions?",
+        "Explain REST API best practices"
+      ],
+      "nonTechnicalQuestions": [
+        "Why did you choose Cognizant?",
+        "How do you handle criticism?",
+        "Describe your ideal work environment",
+        "How do you manage stress?",
+        "What are your career goals?"
+      ],
+      "rounds": [
+        {
+          "roundNumber": 1,
+          "description": "Aptitude Test",
+          "keyPoints": [
+            "Logical reasoning",
+            "Quantitative aptitude",
+            "English proficiency"
+          ]
+        },
+        {
+          "roundNumber": 2,
+          "description": "Technical Round",
+          "keyPoints": [
+            "Programming fundamentals",
+            "Problem-solving",
+            "Basic concepts"
+          ]
+        },
+        {
+          "roundNumber": 3,
+          "description": "HR Round",
+          "keyPoints": [
+            "Background verification",
+            "Salary discussion",
+            "Company policies"
+          ]
+        }
+      ]
+    },
+    {
+      "companyName": "TCS",
+      "jobTitle": "Systems Engineer",
+      "salary": 1500000,
+      "yearOfJoining": 2023,
+      "description": "TCS's interview process was structured and comprehensive. The company offers excellent training programs for freshers. The work culture emphasizes learning and growth. There are opportunities to work with various technologies and domains. The team environment is supportive and professional. The company provides good benefits and job security. Work-life balance is maintained well. There are multiple opportunities for international exposure.",
+      "technicalQuestions": [
+        "Explain the differences between HashMap and HashTable",
+        "What is dependency injection?",
+        "Describe the Spring MVC flow",
+        "How do you handle null pointer exceptions?",
+        "Explain SOLID principles"
+      ],
+      "nonTechnicalQuestions": [
+        "Why did you choose TCS?",
+        "How do you handle work pressure?",
+        "Describe your biggest achievement",
+        "What are your strengths and weaknesses?",
+        "Where do you see yourself in 5 years?"
+      ],
+      "rounds": [
+        {
+          "roundNumber": 1,
+          "description": "TCS NQT",
+          "keyPoints": [
+            "Aptitude test",
+            "Programming MCQs",
+            "English proficiency"
+          ]
+        },
+        {
+          "roundNumber": 2,
+          "description": "Technical Interview",
+          "keyPoints": [
+            "Core concepts",
+            "Programming fundamentals",
+            "Project discussion"
+          ]
+        },
+        {
+          "roundNumber": 3,
+          "description": "HR Round",
+          "keyPoints": [
+            "Background verification",
+            "Document verification",
+            "Offer discussion"
+          ]
+        }
+      ]
+    },
+    {
+      "companyName": "Invesco",
+      "jobTitle": "Software Developer",
+      "salary": 2100000,
+      "yearOfJoining": 2023,
+      "description": "Invesco's interview process focused on both technical skills and financial domain knowledge. The company provides excellent opportunities in fintech. The work environment is professional and challenging. There's emphasis on innovation and quality. The team is diverse and collaborative. Projects involve working with investment technology. The company offers good benefits and growth opportunities. Training is provided for both technical and domain knowledge.",
+      "technicalQuestions": [
+        "Design a portfolio management system",
+        "Explain multithreading concepts",
+        "How would you optimize database performance?",
+        "Implement a caching mechanism",
+        "Describe your experience with CI/CD"
+      ],
+      "nonTechnicalQuestions": [
+        "What interests you about investment technology?",
+        "How do you handle conflicting priorities?",
+        "Describe a challenging project",
+        "How do you keep yourself updated?",
+        "What's your approach to problem-solving?"
+      ],
+      "rounds": [
+        {
+          "roundNumber": 1,
+          "description": "Online Assessment",
+          "keyPoints": [
+            "Coding test",
+            "Logical reasoning",
+            "Technical aptitude"
+          ]
+        },
+        {
+          "roundNumber": 2,
+          "description": "Technical Round 1",
+          "keyPoints": [
+            "Data structures",
+            "Algorithms",
+            "System design"
+          ]
+        },
+        {
+          "roundNumber": 3,
+          "description": "Technical Round 2",
+          "keyPoints": [
+            "Project discussion",
+            "Domain knowledge",
+            "Problem-solving"
+          ]
+        },
+        {
+          "roundNumber": 4,
+          "description": "HR Round",
+          "keyPoints": [
+            "Cultural fit",
+            "Compensation",
+            "Benefits discussion"
+          ]
+        }
+      ]
+    }
+  ]
+} 
