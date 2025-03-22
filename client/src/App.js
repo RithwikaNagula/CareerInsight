@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
   const { isAuthenticated } = useAuth();
   
   if (!isAuthenticated) {
-    return <Suspense fallback={<LoadingFallback />}>{children}</Suspense>;
+    return children;
   }
 
   return (
@@ -47,10 +47,12 @@ const Layout = ({ children }) => {
         component="main"
         sx={{
           flexGrow: 1,
-          p: 3,
+          p: { xs: 2, md: 4 }, // Responsive padding
           ml: '240px', // Width of the Navbar
           minHeight: '100vh',
-          backgroundColor: '#f5f5f5'
+          backgroundColor: '#f5f5f5',
+          maxWidth: 'calc(100vw - 240px)', // Prevent horizontal scroll
+          overflowX: 'hidden'
         }}
       >
         <Suspense fallback={<LoadingFallback />}>{children}</Suspense>

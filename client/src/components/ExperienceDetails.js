@@ -4,51 +4,24 @@ import {
   Paper,
   Typography,
   Box,
-  Grid,
   Chip,
   IconButton,
   Breadcrumbs,
   Link,
-  Card,
-  CardContent,
-  Divider,
-  styled,
+  List,
+  ListItem,
+  ListItemText,
   CircularProgress,
 } from '@mui/material';
 import {
   Work as WorkIcon,
-  School as SchoolIcon,
   AttachMoney as MoneyIcon,
-  QuestionAnswer as QuestionIcon,
-  Assignment as AssignmentIcon,
   NavigateBefore as BackIcon,
+  CalendarToday as CalendarIcon,
+  Email as EmailIcon,
 } from '@mui/icons-material';
 import { useParams, useNavigate, Link as RouterLink } from 'react-router-dom';
 import axios from 'axios';
-
-const StyledContainer = styled(Container)(({ theme }) => ({
-  paddingTop: theme.spacing(4),
-  paddingBottom: theme.spacing(4),
-  minHeight: 'calc(100vh - 64px)',
-  background: 'linear-gradient(to right bottom, #ffffff, #f5f5f5)',
-}));
-
-const StyledCard = styled(Card)(({ theme }) => ({
-  height: '100%',
-  transition: 'transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out',
-  '&:hover': {
-    transform: 'translateY(-4px)',
-    boxShadow: theme.shadows[4],
-  },
-}));
-
-const SectionTitle = styled(Typography)(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  gap: theme.spacing(1),
-  marginBottom: theme.spacing(2),
-  color: theme.palette.primary.main,
-}));
 
 const ExperienceDetails = () => {
   const { id } = useParams();
@@ -96,8 +69,7 @@ const ExperienceDetails = () => {
   }
 
   return (
-    <StyledContainer>
-      {/* Breadcrumb Navigation */}
+    <Container maxWidth="lg" sx={{ py: 4 }}>
       <Box sx={{ mb: 3, display: 'flex', alignItems: 'center' }}>
         <IconButton
           onClick={() => navigate('/experiences')}
@@ -117,128 +89,121 @@ const ExperienceDetails = () => {
         </Breadcrumbs>
       </Box>
 
-      <Grid container spacing={3}>
-        {/* Left Column */}
-        <Grid item xs={12} md={4}>
-          <StyledCard>
-            <CardContent>
-              <SectionTitle variant="h6">
-                <WorkIcon />
-                Company Details
-              </SectionTitle>
-              <Typography variant="h5" gutterBottom>
-                {experience.companyName}
-              </Typography>
-              <Typography variant="subtitle1" color="text.secondary" gutterBottom>
-                {experience.jobTitle}
-              </Typography>
-              <Box sx={{ mt: 2, display: 'flex', gap: 1, flexWrap: 'wrap' }}>
-                <Chip
-                  icon={<MoneyIcon />}
-                  label={`₹${experience.salary.toLocaleString()}/year`}
-                  color="success"
+      <Paper elevation={2} sx={{ p: 4 }}>
+        <Typography variant="h4" gutterBottom sx={{ color: '#000', fontWeight: 600 }}>
+          {experience.companyName}
+        </Typography>
+
+        <Box sx={{ display: 'flex', gap: 1, mb: 3, flexWrap: 'wrap' }}>
+          <Chip
+            icon={<WorkIcon />}
+            label={experience.jobTitle}
+            color="primary"
+            variant="outlined"
+            sx={{ fontSize: '1rem' }}
+          />
+          <Chip
+            label={`₹${experience.salary.toLocaleString()}/year`}
+            color="success"
+            variant="outlined"
+            sx={{ fontSize: '1rem' }}
+          />
+          <Chip
+            icon={<CalendarIcon />}
+            label={`Joined ${experience.yearOfJoining}`}
+            color="info"
+            variant="outlined"
+            sx={{ fontSize: '1rem' }}
+          />
+          <Chip
+            icon={<EmailIcon />}
+            label={`Posted by: ${experience.userId.email}`}
+            color="secondary"
+            variant="outlined"
+            sx={{ fontSize: '1rem', maxWidth: 'none' }}
+          />
+        </Box>
+
+        <Box sx={{ mb: 4 }}>
+          <Typography variant="h5" gutterBottom sx={{ color: '#000', fontWeight: 600 }}>
+            Job Description
+          </Typography>
+          <Typography variant="body1" paragraph sx={{ color: '#000', fontSize: '1.1rem' }}>
+            {experience.description}
+          </Typography>
+        </Box>
+
+        <Box sx={{ mb: 4 }}>
+          <Typography variant="h5" gutterBottom sx={{ color: '#000', fontWeight: 600 }}>
+            Technical Questions
+          </Typography>
+          <List>
+            {experience.questions.technical.map((question, index) => (
+              <ListItem key={index}>
+                <ListItemText 
+                  primary={question} 
+                  sx={{ 
+                    '& .MuiListItemText-primary': { 
+                      color: '#000', 
+                      fontSize: '1.1rem' 
+                    } 
+                  }}
                 />
-                <Chip
-                  icon={<SchoolIcon />}
-                  label={`Joined ${experience.yearOfJoining}`}
-                  color="primary"
+              </ListItem>
+            ))}
+          </List>
+        </Box>
+
+        <Box sx={{ mb: 4 }}>
+          <Typography variant="h5" gutterBottom sx={{ color: '#000', fontWeight: 600 }}>
+            Non-Technical Questions
+          </Typography>
+          <List>
+            {experience.questions.nonTechnical.map((question, index) => (
+              <ListItem key={index}>
+                <ListItemText 
+                  primary={question}
+                  sx={{ 
+                    '& .MuiListItemText-primary': { 
+                      color: '#000', 
+                      fontSize: '1.1rem' 
+                    } 
+                  }}
                 />
-              </Box>
-            </CardContent>
-          </StyledCard>
-        </Grid>
+              </ListItem>
+            ))}
+          </List>
+        </Box>
 
-        {/* Right Column */}
-        <Grid item xs={12} md={8}>
-          <Grid container spacing={3}>
-            {/* Job Description */}
-            <Grid item xs={12}>
-              <StyledCard>
-                <CardContent>
-                  <SectionTitle variant="h6">
-                    <AssignmentIcon />
-                    Job Description
-                  </SectionTitle>
-                  <Typography variant="body1" paragraph>
-                    {experience.description}
-                  </Typography>
-                </CardContent>
-              </StyledCard>
-            </Grid>
-
-            {/* Interview Questions */}
-            <Grid item xs={12}>
-              <StyledCard>
-                <CardContent>
-                  <SectionTitle variant="h6">
-                    <QuestionIcon />
-                    Interview Questions
-                  </SectionTitle>
-                  
-                  <Typography variant="subtitle1" color="primary" gutterBottom>
-                    Technical Questions
-                  </Typography>
-                  {experience.questions.technical.map((question, index) => (
-                    <Box key={index} sx={{ mb: 2 }}>
-                      <Typography variant="body1">
-                        {index + 1}. {question}
-                      </Typography>
-                    </Box>
-                  ))}
-
-                  <Divider sx={{ my: 3 }} />
-
-                  <Typography variant="subtitle1" color="primary" gutterBottom>
-                    Non-Technical Questions
-                  </Typography>
-                  {experience.questions.nonTechnical.map((question, index) => (
-                    <Box key={index} sx={{ mb: 2 }}>
-                      <Typography variant="body1">
-                        {index + 1}. {question}
-                      </Typography>
-                    </Box>
-                  ))}
-                </CardContent>
-              </StyledCard>
-            </Grid>
-
-            {/* Interview Rounds */}
-            <Grid item xs={12}>
-              <StyledCard>
-                <CardContent>
-                  <SectionTitle variant="h6">
-                    <AssignmentIcon />
-                    Interview Rounds
-                  </SectionTitle>
-                  {experience.rounds.map((round, index) => (
-                    <Box key={index} sx={{ mb: 3 }}>
-                      <Typography variant="subtitle1" color="primary" gutterBottom>
-                        Round {round.roundNumber}
-                      </Typography>
-                      <Typography variant="body1" paragraph>
-                        {round.description}
-                      </Typography>
-                      <Typography variant="subtitle2" gutterBottom>
-                        Key Points:
-                      </Typography>
-                      {round.keyPoints.map((point, pointIndex) => (
-                        <Typography
-                          key={pointIndex}
-                          variant="body2"
-                          sx={{ ml: 2, mb: 1 }}
-                        >
-                          • {point}
-                        </Typography>
-                      ))}
-                    </Box>
-                  ))}
-                </CardContent>
-              </StyledCard>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Grid>
-    </StyledContainer>
+        <Box>
+          <Typography variant="h5" gutterBottom sx={{ color: '#000', fontWeight: 600 }}>
+            Interview Rounds
+          </Typography>
+          {experience.rounds.map((round, index) => (
+            <Paper key={index} variant="outlined" sx={{ p: 3, mb: 2 }}>
+              <Typography variant="h6" gutterBottom sx={{ color: '#000', fontWeight: 600 }}>
+                Round {round.roundNumber}: {round.description}
+              </Typography>
+              <List>
+                {round.keyPoints.map((point, idx) => (
+                  <ListItem key={idx}>
+                    <ListItemText 
+                      primary={point}
+                      sx={{ 
+                        '& .MuiListItemText-primary': { 
+                          color: '#000', 
+                          fontSize: '1.1rem' 
+                        } 
+                      }}
+                    />
+                  </ListItem>
+                ))}
+              </List>
+            </Paper>
+          ))}
+        </Box>
+      </Paper>
+    </Container>
   );
 };
 
