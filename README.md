@@ -1,6 +1,7 @@
 ﻿Career-Insight
 CareerInsight is a web-based career preparation platform designed to help students and job seekers make informed decisions, prepare effectively for interviews, and explore real-world experiences shared by peers. It brings together curated content, interview experiences, and resume samples in one place.
 
+Live Demo:https://careerinsight.netlify.app/
 
 To run the project locally:
 
