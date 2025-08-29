@@ -9,7 +9,7 @@ const experiencesRoutes = require('./routes/experiences');
 dotenv.config();
 const app = express();
 
-// Middleware
+// Middleware code
 app.use(cors());
 app.use(express.json());
 
